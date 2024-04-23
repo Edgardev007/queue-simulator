@@ -8,7 +8,7 @@ export function Forms(props) {
   const [isEstado, setIsEstado] = useState(false);
   const { count, increase, decrease } = useStore(); // Are these used?
   const { tipo } = props;
-  const url = 'http://localhost:3001/api';
+  const url = `${process.env.NEXT_PUBLIC_API_URL}/api` ;
   const titulo = {
     "mm1": "Queue M/M/1",
     "mms": "Queue M/M/S",
